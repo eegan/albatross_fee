@@ -1,0 +1,201 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Reference_Voltage:TLE2426xD U1
+U 1 1 60A10176
+P 6475 3800
+AR Path="/60A08279/60A10176" Ref="U1"  Part="1" 
+AR Path="/60A380E3/60A5232F/60A10176" Ref="U?"  Part="1" 
+AR Path="/60A3A058/60A5271F/60A10176" Ref="U?"  Part="1" 
+F 0 "U1" H 6475 4267 50  0000 C CNN
+F 1 "TLE2426xD" H 6475 4176 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6475 3200 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tle2426.pdf" H 5075 4750 50  0001 C CIN
+	1    6475 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 60A1017C
+P 3525 3700
+AR Path="/60A08279/60A1017C" Ref="J1"  Part="1" 
+AR Path="/60A380E3/60A5232F/60A1017C" Ref="J?"  Part="1" 
+AR Path="/60A3A058/60A5271F/60A1017C" Ref="J?"  Part="1" 
+F 0 "J1" H 3582 4025 50  0000 C CNN
+F 1 "Barrel_Jack" H 3582 3934 50  0000 C CNN
+F 2 "" H 3575 3660 50  0001 C CNN
+F 3 "~" H 3575 3660 50  0001 C CNN
+	1    3525 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3825 3600 4125 3600
+Wire Wire Line
+	3825 3800 3900 3800
+Wire Wire Line
+	3900 3800 3900 4475
+Wire Wire Line
+	3900 4475 4125 4475
+Wire Wire Line
+	6475 4475 6475 4300
+$Comp
+L Device:C C1
+U 1 1 60A10187
+P 4125 4000
+AR Path="/60A08279/60A10187" Ref="C1"  Part="1" 
+AR Path="/60A380E3/60A5232F/60A10187" Ref="C?"  Part="1" 
+AR Path="/60A3A058/60A5271F/60A10187" Ref="C?"  Part="1" 
+F 0 "C1" H 4240 4046 50  0000 L CNN
+F 1 "C" H 4240 3955 50  0000 L CNN
+F 2 "" H 4163 3850 50  0001 C CNN
+F 3 "~" H 4125 4000 50  0001 C CNN
+	1    4125 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 3850 4125 3600
+Connection ~ 4125 3600
+Wire Wire Line
+	4125 3600 4475 3600
+Wire Wire Line
+	4125 4150 4125 4475
+Connection ~ 4125 4475
+Wire Wire Line
+	4125 4475 4475 4475
+Wire Wire Line
+	6975 3600 7275 3600
+Wire Wire Line
+	7275 3600 7275 3675
+$Comp
+L power:GND #PWR0101
+U 1 1 60A10195
+P 7275 3675
+AR Path="/60A08279/60A10195" Ref="#PWR0101"  Part="1" 
+AR Path="/60A380E3/60A5232F/60A10195" Ref="#PWR?"  Part="1" 
+AR Path="/60A3A058/60A5271F/60A10195" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0101" H 7275 3425 50  0001 C CNN
+F 1 "GND" H 7280 3502 50  0000 C CNN
+F 2 "" H 7275 3675 50  0001 C CNN
+F 3 "" H 7275 3675 50  0001 C CNN
+	1    7275 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR0102
+U 1 1 60A1019B
+P 4975 3350
+AR Path="/60A08279/60A1019B" Ref="#PWR0102"  Part="1" 
+AR Path="/60A380E3/60A5232F/60A1019B" Ref="#PWR?"  Part="1" 
+AR Path="/60A3A058/60A5271F/60A1019B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0102" H 4975 3250 50  0001 C CNN
+F 1 "+VDC" H 4975 3625 50  0000 C CNN
+F 2 "" H 4975 3350 50  0001 C CNN
+F 3 "" H 4975 3350 50  0001 C CNN
+	1    4975 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 3350 4975 3600
+Connection ~ 4975 3600
+$Comp
+L power:-VDC #PWR0103
+U 1 1 60A101A4
+P 4975 4725
+AR Path="/60A08279/60A101A4" Ref="#PWR0103"  Part="1" 
+AR Path="/60A380E3/60A5232F/60A101A4" Ref="#PWR?"  Part="1" 
+AR Path="/60A3A058/60A5271F/60A101A4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0103" H 4975 4625 50  0001 C CNN
+F 1 "-VDC" H 4975 5000 50  0000 C CNN
+F 2 "" H 4975 4725 50  0001 C CNN
+F 3 "" H 4975 4725 50  0001 C CNN
+	1    4975 4725
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener_ALT D1
+U 1 1 60A101AD
+P 4475 4000
+AR Path="/60A08279/60A101AD" Ref="D1"  Part="1" 
+AR Path="/60A380E3/60A5232F/60A101AD" Ref="D?"  Part="1" 
+AR Path="/60A3A058/60A5271F/60A101AD" Ref="D?"  Part="1" 
+F 0 "D1" V 4429 4079 50  0000 L CNN
+F 1 "D_Zener_ALT" V 4520 4079 50  0000 L CNN
+F 2 "" H 4475 4000 50  0001 C CNN
+F 3 "~" H 4475 4000 50  0001 C CNN
+	1    4475 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4475 3600 4475 3850
+Wire Wire Line
+	4475 4150 4475 4475
+Connection ~ 4475 3600
+Wire Wire Line
+	4475 3600 4975 3600
+Connection ~ 4475 4475
+$Comp
+L Device:C C30
+U 1 1 60AD169C
+P 5325 3800
+F 0 "C30" H 5440 3846 50  0000 L CNN
+F 1 "1uF" H 5440 3755 50  0000 L CNN
+F 2 "" H 5363 3650 50  0001 C CNN
+F 3 "~" H 5325 3800 50  0001 C CNN
+	1    5325 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 60AD1BF3
+P 5325 4225
+F 0 "C31" H 5440 4271 50  0000 L CNN
+F 1 "1uF" H 5440 4180 50  0000 L CNN
+F 2 "" H 5363 4075 50  0001 C CNN
+F 3 "~" H 5325 4225 50  0001 C CNN
+	1    5325 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5325 4475 5325 4375
+Wire Wire Line
+	4975 3600 5325 3600
+Wire Wire Line
+	5325 3650 5325 3600
+Wire Wire Line
+	5325 4075 5325 4025
+Connection ~ 5325 4475
+Wire Wire Line
+	5325 4475 6475 4475
+Connection ~ 5325 3600
+Wire Wire Line
+	5325 3600 5975 3600
+Wire Wire Line
+	5975 3700 5875 3700
+Wire Wire Line
+	5875 3700 5875 4025
+Wire Wire Line
+	5875 4025 5325 4025
+Connection ~ 5325 4025
+Wire Wire Line
+	5325 4025 5325 3950
+Wire Wire Line
+	4475 4475 4975 4475
+Wire Wire Line
+	4975 4725 4975 4475
+Connection ~ 4975 4475
+Wire Wire Line
+	4975 4475 5325 4475
+$EndSCHEMATC

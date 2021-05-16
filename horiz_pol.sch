@@ -1,0 +1,590 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 60A49AA8
+P 8150 2200
+AR Path="/60A49AA8" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AA8" Ref="#PWR0104"  Part="1" 
+AR Path="/60A78F04/60A49AA8" Ref="#PWR0124"  Part="1" 
+AR Path="/60AAFCBB/60A49AA8" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 8150 1950 50  0001 C CNN
+F 1 "GND" H 8155 2027 50  0000 C CNN
+F 2 "" H 8150 2200 50  0001 C CNN
+F 3 "" H 8150 2200 50  0001 C CNN
+	1    8150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transformer:ADT4-5WT TR?
+U 1 1 60A49AAE
+P 7850 1825
+AR Path="/60A49AAE" Ref="TR?"  Part="1" 
+AR Path="/60A380E3/60A49AAE" Ref="TR1"  Part="1" 
+AR Path="/60A78F04/60A49AAE" Ref="TR2"  Part="1" 
+AR Path="/60AAFCBB/60A49AAE" Ref="TR1"  Part="1" 
+F 0 "TR1" V 7804 2069 50  0000 L CNN
+F 1 "ADT4-5WT" V 7895 2069 50  0000 L CNN
+F 2 "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm" H 7850 1475 50  0001 C CNN
+F 3 "https://www.minicircuits.com/pdfs/ADT4-5WT+.pdf" H 7850 1825 50  0001 C CNN
+	1    7850 1825
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60A49ABC
+P 8350 1625
+AR Path="/60A49ABC" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A49ABC" Ref="R3"  Part="1" 
+AR Path="/60A78F04/60A49ABC" Ref="R28"  Part="1" 
+AR Path="/60AAFCBB/60A49ABC" Ref="R13"  Part="1" 
+F 0 "R13" V 8145 1625 50  0000 C CNN
+F 1 "TBD" V 8236 1625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8390 1615 50  0001 C CNN
+F 3 "~" H 8350 1625 50  0001 C CNN
+	1    8350 1625
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8050 1625 8200 1625
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 60A49AC6
+P 10425 1625
+AR Path="/60A49AC6" Ref="J?"  Part="1" 
+AR Path="/60A380E3/60A49AC6" Ref="J2"  Part="1" 
+AR Path="/60A78F04/60A49AC6" Ref="J6"  Part="1" 
+AR Path="/60AAFCBB/60A49AC6" Ref="J2"  Part="1" 
+F 0 "J2" H 10525 1600 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10525 1509 50  0000 L CNN
+F 2 "" H 10425 1625 50  0001 C CNN
+F 3 " ~" H 10425 1625 50  0001 C CNN
+	1    10425 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A49ACC
+P 10425 1825
+AR Path="/60A49ACC" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49ACC" Ref="#PWR0105"  Part="1" 
+AR Path="/60A78F04/60A49ACC" Ref="#PWR0125"  Part="1" 
+AR Path="/60AAFCBB/60A49ACC" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 10425 1575 50  0001 C CNN
+F 1 "GND" H 10430 1652 50  0000 C CNN
+F 2 "" H 10425 1825 50  0001 C CNN
+F 3 "" H 10425 1825 50  0001 C CNN
+	1    10425 1825
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 2775 1400 875  675 
+U 60A49AD1
+F0 "sheet60A49AA1" 50
+F1 "buffer.sch" 50
+F2 "Output" O R 3650 1625 50 
+F3 "Feedback" O R 3650 1825 50 
+$EndSheet
+Wire Wire Line
+	8150 2025 8050 2025
+Wire Wire Line
+	8150 2025 8150 2200
+Wire Wire Line
+	3650 2525 5000 2525
+Wire Wire Line
+	7525 2525 7525 2025
+Wire Wire Line
+	7525 2025 7650 2025
+Wire Wire Line
+	8500 1625 9625 1625
+Text Notes 725  4550 0    150  ~ 0
+To be added:\n* synthesized output impedance?\n
+$Sheet
+S 2775 2300 875  675 
+U 60A4C5DD
+F0 "sheet60A4C5DD" 50
+F1 "buffer.sch" 50
+F2 "Output" O R 3650 2525 50 
+F3 "Feedback" O R 3650 2725 50 
+$EndSheet
+$Comp
+L Device:R_US R?
+U 1 1 60A839C9
+P 7225 3100
+AR Path="/60A839C9" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A839C9" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A839C9" Ref="R6"  Part="1" 
+AR Path="/60AAFCBB/60A839C9" Ref="R12"  Part="1" 
+F 0 "R12" V 7020 3100 50  0000 C CNN
+F 1 "TBD" V 7111 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7265 3090 50  0001 C CNN
+F 3 "~" H 7225 3100 50  0001 C CNN
+	1    7225 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60A83C19
+P 7075 6175
+AR Path="/60A83C19" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A83C19" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A83C19" Ref="R5"  Part="1" 
+AR Path="/60AAFCBB/60A83C19" Ref="R11"  Part="1" 
+F 0 "R11" V 6870 6175 50  0000 C CNN
+F 1 "TBD" V 6961 6175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7115 6165 50  0001 C CNN
+F 3 "~" H 7075 6175 50  0001 C CNN
+	1    7075 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60A83EF0
+P 5525 6175
+AR Path="/60A83EF0" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A83EF0" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A83EF0" Ref="R2"  Part="1" 
+AR Path="/60AAFCBB/60A83EF0" Ref="R8"  Part="1" 
+F 0 "R8" V 5320 6175 50  0000 C CNN
+F 1 "TBD" V 5411 6175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5565 6165 50  0001 C CNN
+F 3 "~" H 5525 6175 50  0001 C CNN
+	1    5525 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60A840AA
+P 5525 3100
+AR Path="/60A840AA" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A840AA" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A840AA" Ref="R1"  Part="1" 
+AR Path="/60AAFCBB/60A840AA" Ref="R7"  Part="1" 
+F 0 "R7" V 5320 3100 50  0000 C CNN
+F 1 "TBD" V 5411 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5565 3090 50  0001 C CNN
+F 3 "~" H 5525 3100 50  0001 C CNN
+	1    5525 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+VDC #PWR?
+U 1 1 60A8858B
+P 6875 3525
+AR Path="/60A8858B" Ref="#PWR?"  Part="1" 
+AR Path="/60A19B55/60A8858B" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A8858B" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A8858B" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A8858B" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A8858B" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A8858B" Ref="#PWR02"  Part="1" 
+AR Path="/60AAFCBB/60A8858B" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 6875 3425 50  0001 C CNN
+F 1 "+VDC" H 6875 3800 50  0000 C CNN
+F 2 "" H 6875 3525 50  0001 C CNN
+F 3 "" H 6875 3525 50  0001 C CNN
+	1    6875 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #PWR?
+U 1 1 60A88591
+P 6875 5525
+AR Path="/60A88591" Ref="#PWR?"  Part="1" 
+AR Path="/60A19B55/60A88591" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A88591" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A88591" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A88591" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A88591" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A88591" Ref="#PWR03"  Part="1" 
+AR Path="/60AAFCBB/60A88591" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 6875 5425 50  0001 C CNN
+F 1 "-VDC" H 6875 5800 50  0000 C CNN
+F 2 "" H 6875 5525 50  0001 C CNN
+F 3 "" H 6875 5525 50  0001 C CNN
+	1    6875 5525
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6875 4975 6875 5100
+Wire Wire Line
+	6875 3525 6875 3650
+$Comp
+L Device:C C?
+U 1 1 60A885B6
+P 7275 5250
+AR Path="/60A885B6" Ref="C?"  Part="1" 
+AR Path="/60A19B55/60A885B6" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A885B6" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885B6" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885B6" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885B6" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A885B6" Ref="C4"  Part="1" 
+AR Path="/60AAFCBB/60A885B6" Ref="C7"  Part="1" 
+F 0 "C7" V 7023 5250 50  0000 C CNN
+F 1 "C" V 7114 5250 50  0000 C CNN
+F 2 "" H 7313 5100 50  0001 C CNN
+F 3 "~" H 7275 5250 50  0001 C CNN
+	1    7275 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A885BC
+P 6475 4200
+AR Path="/60A885BC" Ref="C?"  Part="1" 
+AR Path="/60A19B55/60A885BC" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A885BC" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885BC" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885BC" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885BC" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A885BC" Ref="C2"  Part="1" 
+AR Path="/60AAFCBB/60A885BC" Ref="C5"  Part="1" 
+F 0 "C5" V 6223 4200 50  0000 C CNN
+F 1 "C" V 6314 4200 50  0000 C CNN
+F 2 "" H 6513 4050 50  0001 C CNN
+F 3 "~" H 6475 4200 50  0001 C CNN
+	1    6475 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A885C2
+P 7275 5400
+AR Path="/60A885C2" Ref="#PWR?"  Part="1" 
+AR Path="/60A19B55/60A885C2" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A885C2" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885C2" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885C2" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885C2" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A885C2" Ref="#PWR04"  Part="1" 
+AR Path="/60AAFCBB/60A885C2" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 7275 5150 50  0001 C CNN
+F 1 "GND" H 7280 5227 50  0000 C CNN
+F 2 "" H 7275 5400 50  0001 C CNN
+F 3 "" H 7275 5400 50  0001 C CNN
+	1    7275 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A885C8
+P 6475 4350
+AR Path="/60A885C8" Ref="#PWR?"  Part="1" 
+AR Path="/60A19B55/60A885C8" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A885C8" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885C8" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885C8" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885C8" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A885C8" Ref="#PWR01"  Part="1" 
+AR Path="/60AAFCBB/60A885C8" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 6475 4100 50  0001 C CNN
+F 1 "GND" H 6480 4177 50  0000 C CNN
+F 2 "" H 6475 4350 50  0001 C CNN
+F 3 "" H 6475 4350 50  0001 C CNN
+	1    6475 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 4050 6875 4050
+Connection ~ 6875 4050
+Wire Wire Line
+	6875 4050 6875 4100
+Wire Wire Line
+	7275 5100 6875 5100
+Connection ~ 6875 5100
+Wire Wire Line
+	6875 5100 6875 5200
+$Comp
+L Device:R_US R?
+U 1 1 60A885D4
+P 6875 3800
+AR Path="/60A885D4" Ref="R?"  Part="1" 
+AR Path="/60A19B55/60A885D4" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A885D4" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885D4" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885D4" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885D4" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A885D4" Ref="R3"  Part="1" 
+AR Path="/60AAFCBB/60A885D4" Ref="R9"  Part="1" 
+F 0 "R9" H 6807 3754 50  0000 R CNN
+F 1 "TBD" H 6807 3845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6915 3790 50  0001 C CNN
+F 3 "~" H 6875 3800 50  0001 C CNN
+	1    6875 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6875 3950 6875 4050
+$Comp
+L Device:R_US R?
+U 1 1 60A885DB
+P 6875 5350
+AR Path="/60A885DB" Ref="R?"  Part="1" 
+AR Path="/60A19B55/60A885DB" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A885DB" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885DB" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885DB" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885DB" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A885DB" Ref="R4"  Part="1" 
+AR Path="/60AAFCBB/60A885DB" Ref="R10"  Part="1" 
+F 0 "R10" H 6807 5304 50  0000 R CNN
+F 1 "TBD" H 6807 5395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6915 5340 50  0001 C CNN
+F 3 "~" H 6875 5350 50  0001 C CNN
+	1    6875 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6875 5500 6875 5525
+$Comp
+L Device:Net-Tie_2 NT?
+U 1 1 60A885E2
+P 6475 5350
+AR Path="/60A380E3/60A49AD1/60A885E2" Ref="NT?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885E2" Ref="NT?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885E2" Ref="NT?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885E2" Ref="NT?"  Part="1" 
+AR Path="/60A78F04/60A885E2" Ref="NT2"  Part="1" 
+AR Path="/60AAFCBB/60A885E2" Ref="NT4"  Part="1" 
+F 0 "NT4" V 6429 5394 50  0000 L CNN
+F 1 "Net-Tie_2" V 6520 5394 50  0000 L CNN
+F 2 "" H 6475 5350 50  0001 C CNN
+F 3 "~" H 6475 5350 50  0001 C CNN
+	1    6475 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6475 5450 6475 5500
+Wire Wire Line
+	6475 5500 6875 5500
+Connection ~ 6875 5500
+Wire Wire Line
+	6475 5250 6475 5200
+Wire Wire Line
+	6475 5200 6875 5200
+Connection ~ 6875 5200
+$Comp
+L Device:Net-Tie_2 NT?
+U 1 1 60A885EE
+P 6475 3800
+AR Path="/60A380E3/60A49AD1/60A885EE" Ref="NT?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885EE" Ref="NT?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885EE" Ref="NT?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885EE" Ref="NT?"  Part="1" 
+AR Path="/60A78F04/60A885EE" Ref="NT1"  Part="1" 
+AR Path="/60AAFCBB/60A885EE" Ref="NT3"  Part="1" 
+F 0 "NT3" V 6429 3844 50  0000 L CNN
+F 1 "Net-Tie_2" V 6520 3844 50  0000 L CNN
+F 2 "" H 6475 3800 50  0001 C CNN
+F 3 "~" H 6475 3800 50  0001 C CNN
+	1    6475 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6475 3900 6475 3950
+Wire Wire Line
+	6475 3950 6875 3950
+Wire Wire Line
+	6475 3700 6475 3650
+Wire Wire Line
+	6475 3650 6875 3650
+Connection ~ 6875 3650
+Connection ~ 6875 3950
+$Comp
+L Amplifier_Operational:LTC6228xS8 U?
+U 1 1 60A885FA
+P 6975 4675
+AR Path="/60A380E3/60A49AD1/60A885FA" Ref="U?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A885FA" Ref="U?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A885FA" Ref="U?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A885FA" Ref="U?"  Part="1" 
+AR Path="/60A78F04/60A885FA" Ref="U2"  Part="1" 
+AR Path="/60AAFCBB/60A885FA" Ref="U3"  Part="1" 
+F 0 "U3" H 6975 5156 50  0000 C CNN
+F 1 "LTC6228xS8" H 6975 5065 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6975 4075 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6228-6229.pdf" H 6975 4675 50  0001 C CNN
+	1    6975 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 4975 7450 4975
+Wire Wire Line
+	7450 4975 7450 4100
+Text Notes 8950 4175 2    50   ~ 0
+pull high for bias current cancellation
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 60A88603
+P 7175 4100
+AR Path="/60A380E3/60A49AD1/60A88603" Ref="JP?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A88603" Ref="JP?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A88603" Ref="JP?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A88603" Ref="JP?"  Part="1" 
+AR Path="/60A78F04/60A88603" Ref="JP1"  Part="1" 
+AR Path="/60AAFCBB/60A88603" Ref="JP4"  Part="1" 
+F 0 "JP4" H 7175 4335 50  0000 C CNN
+F 1 "Jumper_2_Open" H 7175 4244 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7175 4100 50  0001 C CNN
+F 3 "~" H 7175 4100 50  0001 C CNN
+	1    7175 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4100 7375 4100
+Wire Wire Line
+	6975 4100 6875 4100
+Connection ~ 6875 4100
+Wire Wire Line
+	6875 4100 6875 4375
+$Comp
+L power:GND #PWR?
+U 1 1 60A950B7
+P 7925 3175
+AR Path="/60A950B7" Ref="#PWR?"  Part="1" 
+AR Path="/60A19B55/60A950B7" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/60A950B7" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/60A950B7" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/60A950B7" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/60A950B7" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A950B7" Ref="#PWR05"  Part="1" 
+AR Path="/60AAFCBB/60A950B7" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 7925 2925 50  0001 C CNN
+F 1 "GND" H 7930 3002 50  0000 C CNN
+F 2 "" H 7925 3175 50  0001 C CNN
+F 3 "" H 7925 3175 50  0001 C CNN
+	1    7925 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 3100 6125 3100
+Connection ~ 5000 2525
+Wire Wire Line
+	5000 2525 5350 2525
+Wire Wire Line
+	5675 6175 6125 6175
+Wire Wire Line
+	5000 3100 5000 2525
+Wire Wire Line
+	5375 3100 5000 3100
+Wire Wire Line
+	4625 6175 5375 6175
+Wire Wire Line
+	4625 1625 5350 1625
+Connection ~ 4625 1625
+Wire Wire Line
+	3650 1625 4625 1625
+Wire Wire Line
+	4625 1625 4625 6175
+Wire Wire Line
+	6675 4775 6125 4775
+Wire Wire Line
+	6125 4575 6675 4575
+Wire Wire Line
+	7925 3100 7925 3175
+Wire Wire Line
+	7375 3100 7925 3100
+Wire Wire Line
+	7275 4675 7850 4675
+Wire Wire Line
+	7850 6175 7850 4675
+Wire Wire Line
+	7225 6175 7850 6175
+Connection ~ 7850 4675
+Wire Wire Line
+	6125 6175 6125 4775
+Connection ~ 6125 6175
+Wire Wire Line
+	6125 6175 6925 6175
+Connection ~ 6125 3100
+Wire Wire Line
+	6125 3100 5675 3100
+Wire Wire Line
+	6125 3100 6125 4575
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 60AA955C
+P 9825 1625
+AR Path="/60A78F04/60AA955C" Ref="JP2"  Part="1" 
+AR Path="/60AAFCBB/60AA955C" Ref="JP9"  Part="1" 
+F 0 "JP9" H 9825 1860 50  0000 C CNN
+F 1 "Jumper_2_Open" H 9825 1769 50  0000 C CNN
+F 2 "" H 9825 1625 50  0001 C CNN
+F 3 "~" H 9825 1625 50  0001 C CNN
+	1    9825 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10025 1625 10150 1625
+Wire Wire Line
+	10150 4675 10150 1625
+Wire Wire Line
+	7850 4675 9625 4675
+Connection ~ 10150 1625
+Wire Wire Line
+	10150 1625 10225 1625
+$Comp
+L Jumper:Jumper_2_Open JP3
+U 1 1 60AAABFD
+P 9825 4675
+AR Path="/60A78F04/60AAABFD" Ref="JP3"  Part="1" 
+AR Path="/60AAFCBB/60AAABFD" Ref="JP10"  Part="1" 
+F 0 "JP10" H 9825 4910 50  0000 C CNN
+F 1 "Jumper_2_Open" H 9825 4819 50  0000 C CNN
+F 2 "" H 9825 4675 50  0001 C CNN
+F 3 "~" H 9825 4675 50  0001 C CNN
+	1    9825 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10025 4675 10150 4675
+Text HLabel 5500 1500 2    50   Output ~ 0
+OUT+
+Wire Wire Line
+	5500 1500 5350 1500
+Wire Wire Line
+	5350 1500 5350 1625
+Connection ~ 5350 1625
+Text HLabel 5500 2400 2    50   Output ~ 0
+OUT-
+Wire Wire Line
+	5500 2400 5350 2400
+Wire Wire Line
+	5350 2400 5350 2525
+Connection ~ 5350 2525
+Wire Wire Line
+	5350 1625 6950 1625
+Wire Wire Line
+	5350 2525 7525 2525
+$Comp
+L Device:C C3
+U 1 1 60ACF1D0
+P 7100 1625
+AR Path="/60A78F04/60ACF1D0" Ref="C3"  Part="1" 
+AR Path="/60AAFCBB/60ACF1D0" Ref="C6"  Part="1" 
+F 0 "C6" V 6848 1625 50  0000 C CNN
+F 1 "C" V 6939 1625 50  0000 C CNN
+F 2 "" H 7138 1475 50  0001 C CNN
+F 3 "~" H 7100 1625 50  0001 C CNN
+	1    7100 1625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 1625 7650 1625
+Text Notes 8925 2075 2    50   ~ 0
+Could add option \nfor half voltage\nusing center tap\nor double using\ntap on other side
+$EndSCHEMATC
