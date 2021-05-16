@@ -587,4 +587,27 @@ Wire Wire Line
 	7250 1625 7650 1625
 Text Notes 8925 2075 2    50   ~ 0
 Could add option \nfor half voltage\nusing center tap\nor double using\ntap on other side
+Wire Wire Line
+	3650 1825 3975 1825
+Wire Wire Line
+	3975 1825 3975 2150
+Wire Wire Line
+	3975 2725 3650 2725
+$Comp
+L Device:R_US R?
+U 1 1 60A375F6
+P 3975 2300
+AR Path="/60A375F6" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A375F6" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A375F6" Ref="R55"  Part="1" 
+AR Path="/60AAFCBB/60A375F6" Ref="R56"  Part="1" 
+F 0 "R55" V 3770 2300 50  0000 C CNN
+F 1 "TBD" V 3861 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4015 2290 50  0001 C CNN
+F 3 "~" H 3975 2300 50  0001 C CNN
+	1    3975 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3975 2450 3975 2725
 $EndSCHEMATC
