@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name new-fee-rescue)(type Legacy)(uri ${KIPRJMOD}/new-fee-rescue.lib)(options "")(descr ""))
+  (lib (name new-fee)(type Legacy)(uri ${KIPRJMOD}/new-fee.lib)(options "")(descr ""))
+  (lib (name FEE_redesign_v5-eagle-import)(type Legacy)(uri "C:/Users/eamon/OneDrive - McGill University/ALBATROS/04 - antenna-test/sch/fee-import/FEE_redesign_v5-eagle-import.lib")(options "")(descr ""))
+)

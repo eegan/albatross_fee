@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -63,31 +63,31 @@ Wire Wire Line
 $Comp
 L Connector:Conn_Coaxial J?
 U 1 1 60A49AC6
-P 10425 1625
+P 10175 1875
 AR Path="/60A49AC6" Ref="J?"  Part="1" 
 AR Path="/60A380E3/60A49AC6" Ref="J2"  Part="1" 
 AR Path="/60A78F04/60A49AC6" Ref="J6"  Part="1" 
 AR Path="/60AAFCBB/60A49AC6" Ref="J2"  Part="1" 
-F 0 "J2" H 10525 1600 50  0000 L CNN
-F 1 "Conn_Coaxial" H 10525 1509 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 10425 1625 50  0001 C CNN
-F 3 " ~" H 10425 1625 50  0001 C CNN
-	1    10425 1625
+F 0 "J2" H 10275 1850 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10275 1759 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 10175 1875 50  0001 C CNN
+F 3 " ~" H 10175 1875 50  0001 C CNN
+	1    10175 1875
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60A49ACC
-P 10425 1825
+P 10175 2075
 AR Path="/60A49ACC" Ref="#PWR?"  Part="1" 
 AR Path="/60A380E3/60A49ACC" Ref="#PWR0105"  Part="1" 
 AR Path="/60A78F04/60A49ACC" Ref="#PWR0125"  Part="1" 
 AR Path="/60AAFCBB/60A49ACC" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 10425 1575 50  0001 C CNN
-F 1 "GND" H 10430 1652 50  0000 C CNN
-F 2 "" H 10425 1825 50  0001 C CNN
-F 3 "" H 10425 1825 50  0001 C CNN
-	1    10425 1825
+F 0 "#PWR012" H 10175 1825 50  0001 C CNN
+F 1 "GND" H 10180 1902 50  0000 C CNN
+F 2 "" H 10175 2075 50  0001 C CNN
+F 3 "" H 10175 2075 50  0001 C CNN
+	1    10175 2075
 	-1   0    0    -1  
 $EndComp
 $Sheet
@@ -362,7 +362,7 @@ AR Path="/60A78F04/60A885E2" Ref="NT2"  Part="1"
 AR Path="/60AAFCBB/60A885E2" Ref="NT4"  Part="1" 
 F 0 "NT4" V 6429 5394 50  0000 L CNN
 F 1 "Net-Tie_2" V 6520 5394 50  0000 L CNN
-F 2 "" H 6475 5350 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6475 5350 50  0001 C CNN
 F 3 "~" H 6475 5350 50  0001 C CNN
 	1    6475 5350
 	0    1    1    0   
@@ -389,7 +389,7 @@ AR Path="/60A78F04/60A885EE" Ref="NT1"  Part="1"
 AR Path="/60AAFCBB/60A885EE" Ref="NT3"  Part="1" 
 F 0 "NT3" V 6429 3844 50  0000 L CNN
 F 1 "Net-Tie_2" V 6520 3844 50  0000 L CNN
-F 2 "" H 6475 3800 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6475 3800 50  0001 C CNN
 F 3 "~" H 6475 3800 50  0001 C CNN
 	1    6475 3800
 	0    1    1    0   
@@ -515,43 +515,6 @@ Wire Wire Line
 	6125 3100 5675 3100
 Wire Wire Line
 	6125 3100 6125 4575
-$Comp
-L Jumper:Jumper_2_Open JP2
-U 1 1 60AA955C
-P 9825 1625
-AR Path="/60A78F04/60AA955C" Ref="JP2"  Part="1" 
-AR Path="/60AAFCBB/60AA955C" Ref="JP9"  Part="1" 
-F 0 "JP9" H 9825 1860 50  0000 C CNN
-F 1 "Jumper_2_Open" H 9825 1769 50  0000 C CNN
-F 2 "" H 9825 1625 50  0001 C CNN
-F 3 "~" H 9825 1625 50  0001 C CNN
-	1    9825 1625
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10025 1625 10150 1625
-Wire Wire Line
-	10150 4675 10150 1625
-Wire Wire Line
-	7850 4675 9625 4675
-Connection ~ 10150 1625
-Wire Wire Line
-	10150 1625 10225 1625
-$Comp
-L Jumper:Jumper_2_Open JP3
-U 1 1 60AAABFD
-P 9825 4675
-AR Path="/60A78F04/60AAABFD" Ref="JP3"  Part="1" 
-AR Path="/60AAFCBB/60AAABFD" Ref="JP10"  Part="1" 
-F 0 "JP10" H 9825 4910 50  0000 C CNN
-F 1 "Jumper_2_Open" H 9825 4819 50  0000 C CNN
-F 2 "" H 9825 4675 50  0001 C CNN
-F 3 "~" H 9825 4675 50  0001 C CNN
-	1    9825 4675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10025 4675 10150 4675
 Text HLabel 5500 1500 2    50   Output ~ 0
 OUT+
 Wire Wire Line
@@ -610,4 +573,40 @@ F 3 "~" H 3975 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3975 2450 3975 2725
+$Comp
+L Jumper:Jumper_3_Open JP2
+U 1 1 60A2AC94
+P 9625 1875
+AR Path="/60A78F04/60A2AC94" Ref="JP2"  Part="1" 
+AR Path="/60AAFCBB/60A2AC94" Ref="JP3"  Part="1" 
+F 0 "JP3" V 9579 1962 50  0000 L CNN
+F 1 "Jumper_3_Open" V 9670 1962 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 9625 1875 50  0001 C CNN
+F 3 "~" H 9625 1875 50  0001 C CNN
+	1    9625 1875
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7850 4675 8325 4675
+Wire Wire Line
+	9775 1875 9975 1875
+Wire Wire Line
+	9625 2125 9625 4675
+$Comp
+L Device:R_US R?
+U 1 1 60A341B0
+P 8475 4675
+AR Path="/60A341B0" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60A341B0" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60A341B0" Ref="R57"  Part="1" 
+AR Path="/60AAFCBB/60A341B0" Ref="R58"  Part="1" 
+F 0 "R58" V 8270 4675 50  0000 C CNN
+F 1 "TBD" V 8361 4675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8515 4665 50  0001 C CNN
+F 3 "~" H 8475 4675 50  0001 C CNN
+	1    8475 4675
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8625 4675 9625 4675
 $EndSCHEMATC
