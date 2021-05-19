@@ -37,7 +37,7 @@ AR Path="/60A380E3/60A49AAE" Ref="TR1"  Part="1"
 AR Path="/60A78F04/60A49AAE" Ref="TR2"  Part="1" 
 AR Path="/60AAFCBB/60A49AAE" Ref="TR1"  Part="1" 
 F 0 "TR2" V 7804 2069 50  0000 L CNN
-F 1 "ADT4-5WT" V 7895 2069 50  0000 L CNN
+F 1 "ADTT1-1+" V 7895 2069 50  0000 L CNN
 F 2 "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm" H 7850 1475 50  0001 C CNN
 F 3 "https://www.minicircuits.com/pdfs/ADT4-5WT+.pdf" H 7850 1825 50  0001 C CNN
 	1    7850 1825
@@ -93,7 +93,7 @@ $EndComp
 $Sheet
 S 2775 1400 875  675 
 U 60A49AD1
-F0 "sheet60A49AA1" 50
+F0 "BUF1" 50
 F1 "buffer.sch" 50
 F2 "Output" O R 3650 1625 50 
 F3 "Feedback" O R 3650 1825 50 
@@ -107,7 +107,7 @@ Wire Wire Line
 Wire Wire Line
 	7525 2025 7650 2025
 Wire Wire Line
-	8500 1625 9625 1625
+	8500 1625 8725 1625
 Text Notes 725  4800 0    150  ~ 0
 To be added:\n* synthesized output impedance?\n
 $Comp
@@ -538,7 +538,7 @@ F 3 "~" H 7100 1625 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 1625 7650 1625
-Text Notes 8925 2075 2    50   ~ 0
+Text Notes 9100 850  2    50   ~ 0
 Could add option \nfor half voltage\nusing center tap\nor double using\ntap on other side
 Wire Wire Line
 	3650 1825 3975 1825
@@ -565,9 +565,9 @@ AR Path="/60A380E3/60A49AD1/60A49A4B" Ref="JP?"  Part="1"
 AR Path="/60A380E3/60A4C5DD/60A49A4B" Ref="JP?"  Part="1" 
 AR Path="/60A78F04/60A49AD1/60A49A4B" Ref="JP?"  Part="1" 
 AR Path="/60A78F04/60A4C5DD/60A49A4B" Ref="JP?"  Part="1" 
-AR Path="/60A78F04/60A49A4B" Ref="JP?"  Part="1" 
-AR Path="/60AAFCBB/60A49A4B" Ref="JP?"  Part="1" 
-F 0 "JP?" H 3975 2360 50  0000 C CNN
+AR Path="/60A78F04/60A49A4B" Ref="JP9"  Part="1" 
+AR Path="/60AAFCBB/60A49A4B" Ref="JP21"  Part="1" 
+F 0 "JP9" H 3975 2360 50  0000 C CNN
 F 1 "Jumper_2_Open" H 3975 2269 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3975 2125 50  0001 C CNN
 F 3 "~" H 3975 2125 50  0001 C CNN
@@ -600,7 +600,7 @@ Wire Wire Line
 $Sheet
 S 2775 2550 875  675 
 U 60A4C5DD
-F0 "sheet60A4C5DD" 50
+F0 "BUF2" 50
 F1 "buffer.sch" 50
 F2 "Output" O R 3650 2775 50 
 F3 "Feedback" O R 3650 2975 50 
@@ -628,4 +628,28 @@ F 3 "~" H 8475 4925 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9625 2125 9625 4925
+$Comp
+L Device:R_US R?
+U 1 1 60ABA165
+P 8350 1825
+AR Path="/60ABA165" Ref="R?"  Part="1" 
+AR Path="/60A380E3/60ABA165" Ref="R?"  Part="1" 
+AR Path="/60A78F04/60ABA165" Ref="R60"  Part="1" 
+AR Path="/60AAFCBB/60ABA165" Ref="R61"  Part="1" 
+F 0 "R60" V 8145 1825 50  0000 C CNN
+F 1 "TBD" V 8236 1825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8390 1815 50  0001 C CNN
+F 3 "~" H 8350 1825 50  0001 C CNN
+	1    8350 1825
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8200 1825 8050 1825
+Wire Wire Line
+	8500 1825 8725 1825
+Wire Wire Line
+	8725 1825 8725 1625
+Connection ~ 8725 1625
+Wire Wire Line
+	8725 1625 9625 1625
 $EndSCHEMATC
