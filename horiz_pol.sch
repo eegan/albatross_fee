@@ -538,8 +538,6 @@ F 3 "~" H 7100 1625 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 1625 7650 1625
-Text Notes 9100 850  2    50   ~ 0
-Could add option \nfor half voltage\nusing center tap\nor double using\ntap on other side
 Wire Wire Line
 	3650 1825 3975 1825
 $Comp
@@ -652,4 +650,8 @@ Wire Wire Line
 Connection ~ 8725 1625
 Wire Wire Line
 	8725 1625 9625 1625
+Text Notes 7975 1375 0    50   ~ 0
+Connect center tap to enhance\n50Ω drive capability of op amps
+Text Notes 6525 1250 0    50   ~ 0
+Capacitor blocks DC current\nresulting from different OA\noffsets and bias current effects.\n\nA small resistor may also suffice.
 $EndSCHEMATC
