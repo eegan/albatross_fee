@@ -1,7 +1,8 @@
 EESchema Schematic File Version 4
+LIBS:new-fee-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
 Sheet 9 9
 Title ""
@@ -424,7 +425,7 @@ Wire Wire Line
 Connection ~ 6050 2825
 Connection ~ 6050 3125
 $Comp
-L Amplifier_Operational:LTC6228xS8 U?
+L new-fee-rescue:LTC6228xS8-Amplifier_Operational U?
 U 1 1 60AB8C8A
 P 6150 3850
 AR Path="/60A380E3/60A49AD1/60AB8C8A" Ref="U?"  Part="1" 
@@ -434,6 +435,7 @@ AR Path="/60A78F04/60A4C5DD/60AB8C8A" Ref="U?"  Part="1"
 AR Path="/60A78F04/60AB8C8A" Ref="U?"  Part="1" 
 AR Path="/60AAFCBB/60AB8C8A" Ref="U?"  Part="1" 
 AR Path="/60A3A058/60AB8C8A" Ref="U6"  Part="1" 
+AR Path="/60AB8C8A" Ref="U6"  Part="1" 
 F 0 "U6" H 6150 4331 50  0000 C CNN
 F 1 "LTC6228xS8" H 6150 4240 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6150 3250 50  0001 C CNN
