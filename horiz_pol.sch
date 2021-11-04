@@ -78,16 +78,16 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60A49ACC
-P 9975 2075
+P 9975 2475
 AR Path="/60A49ACC" Ref="#PWR?"  Part="1" 
 AR Path="/60A380E3/60A49ACC" Ref="#PWR0105"  Part="1" 
 AR Path="/60A78F04/60A49ACC" Ref="#PWR0125"  Part="1" 
 AR Path="/60AAFCBB/60A49ACC" Ref="#PWR012"  Part="1" 
-F 0 "#PWR0125" H 9975 1825 50  0001 C CNN
-F 1 "GND" H 9980 1902 50  0000 C CNN
-F 2 "" H 9975 2075 50  0001 C CNN
-F 3 "" H 9975 2075 50  0001 C CNN
-	1    9975 2075
+F 0 "#PWR0125" H 9975 2225 50  0001 C CNN
+F 1 "GND" H 9980 2302 50  0000 C CNN
+F 2 "" H 9975 2475 50  0001 C CNN
+F 3 "" H 9975 2475 50  0001 C CNN
+	1    9975 2475
 	-1   0    0    -1  
 $EndComp
 $Sheet
@@ -655,4 +655,64 @@ Text Notes 7775 1375 0    50   ~ 0
 Connect center tap to enhance\n50Ω drive capability of op amps
 Text Notes 6325 1250 0    50   ~ 0
 Capacitor blocks DC current\nresulting from different OA\noffsets and bias current effects.\n\nA small resistor may also suffice.
+$Comp
+L Device:C C?
+U 1 1 618C4669
+P 9725 2275
+AR Path="/618C4669" Ref="C?"  Part="1" 
+AR Path="/60A19B55/618C4669" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618C4669" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618C4669" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618C4669" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618C4669" Ref="C?"  Part="1" 
+AR Path="/60A78F04/618C4669" Ref="C?"  Part="1" 
+AR Path="/60AAFCBB/618C4669" Ref="C?"  Part="1" 
+F 0 "C?" V 9473 2275 50  0000 C CNN
+F 1 "C" V 9564 2275 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9763 2125 50  0001 C CNN
+F 3 "~" H 9725 2275 50  0001 C CNN
+	1    9725 2275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 618C4D3E
+P 10200 2275
+AR Path="/618C4D3E" Ref="C?"  Part="1" 
+AR Path="/60A19B55/618C4D3E" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618C4D3E" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618C4D3E" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618C4D3E" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618C4D3E" Ref="C?"  Part="1" 
+AR Path="/60A78F04/618C4D3E" Ref="C?"  Part="1" 
+AR Path="/60AAFCBB/618C4D3E" Ref="C?"  Part="1" 
+F 0 "C?" V 9948 2275 50  0000 C CNN
+F 1 "C" V 10039 2275 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10238 2125 50  0001 C CNN
+F 3 "~" H 10200 2275 50  0001 C CNN
+	1    10200 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9725 2125 9725 2100
+Wire Wire Line
+	9725 2100 9975 2100
+Wire Wire Line
+	10200 2100 10200 2125
+Wire Wire Line
+	9975 2075 9975 2100
+Connection ~ 9975 2100
+Wire Wire Line
+	9975 2100 10200 2100
+Wire Wire Line
+	9725 2425 9725 2450
+Wire Wire Line
+	9725 2450 9975 2450
+Wire Wire Line
+	10200 2450 10200 2425
+Wire Wire Line
+	9975 2450 9975 2475
+Connection ~ 9975 2450
+Wire Wire Line
+	9975 2450 10200 2450
 $EndSCHEMATC
