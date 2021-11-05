@@ -65,19 +65,6 @@ F 3 " ~" H 8025 3850 50  0001 C CNN
 	1    8025 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60A3C15C
-P 8025 4050
-AR Path="/60A3C15C" Ref="#PWR?"  Part="1" 
-AR Path="/60A3A058/60A3C15C" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 8025 3800 50  0001 C CNN
-F 1 "GND" H 8030 3877 50  0000 C CNN
-F 2 "" H 8025 4050 50  0001 C CNN
-F 3 "" H 8025 4050 50  0001 C CNN
-	1    8025 4050
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	7700 3850 7825 3850
 Text HLabel 2650 5300 0    50   Output ~ 0
@@ -473,4 +460,82 @@ Wire Wire Line
 Connection ~ 6050 3275
 Wire Wire Line
 	6050 3275 6050 3550
+$Comp
+L power:GND #PWR?
+U 1 1 618B20F6
+P 8025 4450
+AR Path="/618B20F6" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/618B20F6" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/618B20F6" Ref="#PWR?"  Part="1" 
+AR Path="/60AAFCBB/618B20F6" Ref="#PWR?"  Part="1" 
+AR Path="/60A3A058/618B20F6" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 8025 4200 50  0001 C CNN
+F 1 "GND" H 8030 4277 50  0000 C CNN
+F 2 "" H 8025 4450 50  0001 C CNN
+F 3 "" H 8025 4450 50  0001 C CNN
+	1    8025 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 618B2102
+P 7775 4250
+AR Path="/618B2102" Ref="C?"  Part="1" 
+AR Path="/60A19B55/618B2102" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618B2102" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618B2102" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618B2102" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618B2102" Ref="C?"  Part="1" 
+AR Path="/60A78F04/618B2102" Ref="C?"  Part="1" 
+AR Path="/60AAFCBB/618B2102" Ref="C?"  Part="1" 
+AR Path="/60A3A058/618B2102" Ref="C66"  Part="1" 
+F 0 "C66" V 7523 4250 50  0000 C CNN
+F 1 "C" V 7614 4250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7813 4100 50  0001 C CNN
+F 3 "~" H 7775 4250 50  0001 C CNN
+	1    7775 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 618B2108
+P 8250 4250
+AR Path="/618B2108" Ref="C?"  Part="1" 
+AR Path="/60A19B55/618B2108" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618B2108" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618B2108" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618B2108" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618B2108" Ref="C?"  Part="1" 
+AR Path="/60A78F04/618B2108" Ref="C?"  Part="1" 
+AR Path="/60AAFCBB/618B2108" Ref="C?"  Part="1" 
+AR Path="/60A3A058/618B2108" Ref="C67"  Part="1" 
+F 0 "C67" V 7998 4250 50  0000 C CNN
+F 1 "C" V 8089 4250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8288 4100 50  0001 C CNN
+F 3 "~" H 8250 4250 50  0001 C CNN
+	1    8250 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7775 4100 7775 4075
+Wire Wire Line
+	7775 4075 8025 4075
+Wire Wire Line
+	8250 4075 8250 4100
+Wire Wire Line
+	8025 4050 8025 4075
+Connection ~ 8025 4075
+Wire Wire Line
+	8025 4075 8250 4075
+Wire Wire Line
+	7775 4400 7775 4425
+Wire Wire Line
+	7775 4425 8025 4425
+Wire Wire Line
+	8250 4425 8250 4400
+Wire Wire Line
+	8025 4425 8025 4450
+Connection ~ 8025 4425
+Wire Wire Line
+	8025 4425 8250 4425
 $EndSCHEMATC
