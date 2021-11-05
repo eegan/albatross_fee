@@ -22,7 +22,7 @@ $EndSheet
 $Sheet
 S 3150 2600 1675 1025
 U 60A78F04
-F0 "HPOL1" 50
+F0 "HPOL-NS" 50
 F1 "horiz_pol.sch" 50
 F2 "OUT+" O R 4825 2950 50 
 F3 "OUT-" O R 4825 3200 50 
@@ -30,7 +30,7 @@ $EndSheet
 $Sheet
 S 3150 4000 1675 1025
 U 60AAFCBB
-F0 "HPOL2" 50
+F0 "HPOL-WE" 50
 F1 "horiz_pol.sch" 50
 F2 "OUT+" O R 4825 4350 50 
 F3 "OUT-" O R 4825 4600 50 
