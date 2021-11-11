@@ -490,12 +490,12 @@ Wire Wire Line
 Wire Wire Line
 	7175 3350 7725 3350
 Wire Wire Line
-	7075 4925 7650 4925
+	7075 4925 7900 4925
 Wire Wire Line
-	7650 6425 7650 4925
+	7900 6425 7900 4925
 Wire Wire Line
-	7025 6425 7650 6425
-Connection ~ 7650 4925
+	7025 6425 7900 6425
+Connection ~ 7900 4925
 Wire Wire Line
 	5925 6425 5925 5025
 Connection ~ 5925 6425
@@ -559,39 +559,22 @@ Wire Wire Line
 $Comp
 L Jumper:Jumper_2_Open JP?
 U 1 1 60A49A4B
-P 3775 2125
+P 3775 2375
 AR Path="/60A380E3/60A49AD1/60A49A4B" Ref="JP?"  Part="1" 
 AR Path="/60A380E3/60A4C5DD/60A49A4B" Ref="JP?"  Part="1" 
 AR Path="/60A78F04/60A49AD1/60A49A4B" Ref="JP?"  Part="1" 
 AR Path="/60A78F04/60A4C5DD/60A49A4B" Ref="JP?"  Part="1" 
 AR Path="/60A78F04/60A49A4B" Ref="JP9"  Part="1" 
 AR Path="/60AAFCBB/60A49A4B" Ref="JP21"  Part="1" 
-F 0 "JP9" H 3775 2360 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3775 2269 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3775 2125 50  0001 C CNN
-F 3 "~" H 3775 2125 50  0001 C CNN
-	1    3775 2125
+F 0 "JP9" H 3775 2610 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3775 2519 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3775 2375 50  0001 C CNN
+F 3 "~" H 3775 2375 50  0001 C CNN
+	1    3775 2375
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3775 1825 3775 1925
-$Comp
-L Device:R_US R?
-U 1 1 60A375F6
-P 3775 2550
-AR Path="/60A375F6" Ref="R?"  Part="1" 
-AR Path="/60A380E3/60A375F6" Ref="R?"  Part="1" 
-AR Path="/60A78F04/60A375F6" Ref="R55"  Part="1" 
-AR Path="/60AAFCBB/60A375F6" Ref="R56"  Part="1" 
-F 0 "R55" V 3570 2550 50  0000 C CNN
-F 1 "TBD" V 3661 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3815 2540 50  0001 C CNN
-F 3 "~" H 3775 2550 50  0001 C CNN
-	1    3775 2550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3775 2700 3775 2975
+	3775 1825 3775 2175
 Wire Wire Line
 	3450 2775 4800 2775
 Wire Wire Line
@@ -605,9 +588,7 @@ F2 "Output" O R 3450 2775 50
 F3 "Feedback" O R 3450 2975 50 
 $EndSheet
 Wire Wire Line
-	3775 2325 3775 2400
-Wire Wire Line
-	7650 4925 8125 4925
+	7900 4925 8125 4925
 Wire Wire Line
 	8425 4925 9425 4925
 $Comp
@@ -715,4 +696,47 @@ Wire Wire Line
 Connection ~ 9975 2450
 Wire Wire Line
 	9975 2450 10200 2450
+Wire Wire Line
+	3775 2575 3775 2975
+$Comp
+L Device:C C?
+U 1 1 618E6080
+P 7475 5500
+AR Path="/618E6080" Ref="C?"  Part="1" 
+AR Path="/60A19B55/618E6080" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618E6080" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618E6080" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618E6080" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618E6080" Ref="C?"  Part="1" 
+AR Path="/60A78F04/618E6080" Ref="C72"  Part="1" 
+AR Path="/60AAFCBB/618E6080" Ref="C73"  Part="1" 
+F 0 "C72" V 7223 5500 50  0000 C CNN
+F 1 "C" V 7314 5500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7513 5350 50  0001 C CNN
+F 3 "~" H 7475 5500 50  0001 C CNN
+	1    7475 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E6098
+P 7475 5650
+AR Path="/618E6098" Ref="#PWR?"  Part="1" 
+AR Path="/60A19B55/618E6098" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618E6098" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618E6098" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618E6098" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618E6098" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/618E6098" Ref="#PWR071"  Part="1" 
+AR Path="/60AAFCBB/618E6098" Ref="#PWR072"  Part="1" 
+F 0 "#PWR071" H 7475 5400 50  0001 C CNN
+F 1 "GND" H 7480 5477 50  0000 C CNN
+F 2 "" H 7475 5650 50  0001 C CNN
+F 3 "" H 7475 5650 50  0001 C CNN
+	1    7475 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7475 5350 7075 5350
+Connection ~ 7075 5350
 $EndSCHEMATC

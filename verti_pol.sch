@@ -13,11 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 6775 3850
+Connection ~ 7175 3850
 Wire Wire Line
-	6775 3850 7400 3850
+	7175 3850 7400 3850
 Wire Wire Line
-	6775 3850 6450 3850
+	7175 3850 6450 3850
 Wire Wire Line
 	5500 3950 5500 5300
 Wire Wire Line
@@ -171,9 +171,9 @@ $EndComp
 Wire Wire Line
 	5500 6350 6150 6350
 Wire Wire Line
-	6775 6350 6775 3850
+	7175 6350 7175 3850
 Wire Wire Line
-	6450 6350 6775 6350
+	6450 6350 7175 6350
 Text Notes 1075 7225 0    150  ~ 0
 To be added:\n* synthesized output impedance?\n
 $Comp
@@ -538,4 +538,47 @@ Wire Wire Line
 Connection ~ 8025 4425
 Wire Wire Line
 	8025 4425 8250 4425
+$Comp
+L Device:C C?
+U 1 1 618E136D
+P 6850 4425
+AR Path="/618E136D" Ref="C?"  Part="1" 
+AR Path="/60A19B55/618E136D" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618E136D" Ref="C?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618E136D" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618E136D" Ref="C?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618E136D" Ref="C?"  Part="1" 
+AR Path="/60A78F04/618E136D" Ref="C?"  Part="1" 
+AR Path="/60AAFCBB/618E136D" Ref="C?"  Part="1" 
+AR Path="/60A3A058/618E136D" Ref="C74"  Part="1" 
+F 0 "C74" V 6598 4425 50  0000 C CNN
+F 1 "C" V 6689 4425 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6888 4275 50  0001 C CNN
+F 3 "~" H 6850 4425 50  0001 C CNN
+	1    6850 4425
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E1385
+P 6850 4575
+AR Path="/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60A19B55/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A49AD1/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60A380E3/60A4C5DD/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A49AD1/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/60A4C5DD/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60A78F04/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60AAFCBB/618E1385" Ref="#PWR?"  Part="1" 
+AR Path="/60A3A058/618E1385" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 6850 4325 50  0001 C CNN
+F 1 "GND" H 6855 4402 50  0000 C CNN
+F 2 "" H 6850 4575 50  0001 C CNN
+F 3 "" H 6850 4575 50  0001 C CNN
+	1    6850 4575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4275 6450 4275
+Connection ~ 6450 4275
 $EndSCHEMATC
