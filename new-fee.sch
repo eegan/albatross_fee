@@ -113,4 +113,6 @@ F 3 "" H 6450 5650 50  0001 C CNN
 	1    6450 5650
 	1    0    0    -1  
 $EndComp
+Text Notes 3250 2050 0    100  ~ 0
+TDL\nAdd mounting holes (grounded, added to schematic)\nAdd back text\nFix antenna connection holes\nCopper pour on top?? would affect Z esp on L2?\nAdd pot for JFET bias?
 $EndSCHEMATC
