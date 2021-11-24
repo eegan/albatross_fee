@@ -115,4 +115,92 @@ F 3 "" H 6450 5650 50  0001 C CNN
 $EndComp
 Text Notes 3250 2050 0    100  ~ 0
 TDL\nAdd mounting holes (grounded, added to schematic)\nAdd back text\nFix antenna connection holes\nCopper pour on top?? would affect Z esp on L2?\nAdd pot for JFET bias?
+$Comp
+L power:GND #PWR082
+U 1 1 619C2A7C
+P 7325 5650
+F 0 "#PWR082" H 7325 5400 50  0001 C CNN
+F 1 "GND" H 7330 5477 50  0000 C CNN
+F 2 "" H 7325 5650 50  0001 C CNN
+F 3 "" H 7325 5650 50  0001 C CNN
+	1    7325 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J19
+U 1 1 619C2A8E
+P 7325 5450
+F 0 "J19" V 7289 5362 50  0000 R CNN
+F 1 "Conn_01x01" V 7198 5362 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7325 5450 50  0001 C CNN
+F 3 "~" H 7325 5450 50  0001 C CNN
+	1    7325 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J20
+U 1 1 619C2A98
+P 7625 5450
+F 0 "J20" V 7589 5362 50  0000 R CNN
+F 1 "Conn_01x01" V 7498 5362 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7625 5450 50  0001 C CNN
+F 3 "~" H 7625 5450 50  0001 C CNN
+	1    7625 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR083
+U 1 1 619C2AA2
+P 7625 5650
+F 0 "#PWR083" H 7625 5400 50  0001 C CNN
+F 1 "GND" H 7630 5477 50  0000 C CNN
+F 2 "" H 7625 5650 50  0001 C CNN
+F 3 "" H 7625 5650 50  0001 C CNN
+	1    7625 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR084
+U 1 1 619C41DD
+P 7925 5650
+F 0 "#PWR084" H 7925 5400 50  0001 C CNN
+F 1 "GND" H 7930 5477 50  0000 C CNN
+F 2 "" H 7925 5650 50  0001 C CNN
+F 3 "" H 7925 5650 50  0001 C CNN
+	1    7925 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J21
+U 1 1 619C41EF
+P 7925 5450
+F 0 "J21" V 7889 5362 50  0000 R CNN
+F 1 "Conn_01x01" V 7798 5362 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 7925 5450 50  0001 C CNN
+F 3 "~" H 7925 5450 50  0001 C CNN
+	1    7925 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J22
+U 1 1 619C41F9
+P 8225 5450
+F 0 "J22" V 8189 5362 50  0000 R CNN
+F 1 "Conn_01x01" V 8098 5362 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 8225 5450 50  0001 C CNN
+F 3 "~" H 8225 5450 50  0001 C CNN
+	1    8225 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR085
+U 1 1 619C4203
+P 8225 5650
+F 0 "#PWR085" H 8225 5400 50  0001 C CNN
+F 1 "GND" H 8230 5477 50  0000 C CNN
+F 2 "" H 8225 5650 50  0001 C CNN
+F 3 "" H 8225 5650 50  0001 C CNN
+	1    8225 5650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
