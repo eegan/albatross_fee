@@ -42,3 +42,9 @@ gerber/*
 *.gbr*
 *.drl
 *.rpt
+
+# script logs
+*.log
+
+# local settings
+*.kicad_prl

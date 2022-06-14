@@ -1,0 +1,9 @@
+Rev 2
+
+DONE: holes - fix distance / size
+DONE: add jumper for antenna-simulating capacitor (able to short it out)
+DONE: 4 layers? Continuous ground plane
+NO: controlled impedance traces
+DONE: add terminating resistor at test SMA (with jumper)
+
+(This is not exhaustive)
