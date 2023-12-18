@@ -1749,7 +1749,7 @@
   (symbol (lib_id "Device:C") (at 180.34 124.46 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 04a2a214-dfd1-41d7-a17e-4abb3dccd8ea)
-    (property "Reference" "C1001" (at 180.34 118.0592 90)
+    (property "Reference" "C6" (at 180.34 118.0592 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470nF" (at 180.34 120.3706 90)
@@ -1766,7 +1766,7 @@
     (instances
       (project "new-fee"
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060a78f04"
-          (reference "C1001") (unit 1)
+          (reference "C6") (unit 1)
         )
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060aafcbb"
           (reference "C3") (unit 1)
@@ -1806,13 +1806,13 @@
   (symbol (lib_id "Device:L") (at 208.915 111.125 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b45f28a7-eb15-47b5-a434-722bf1a6a4d8)
-    (property "Reference" "L1001" (at 208.915 106.6505 90)
+    (property "Reference" "L10" (at 208.915 106.6505 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100uH" (at 208.915 109.4256 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 208.915 111.125 0)
+    (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 208.915 111.125 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 208.915 111.125 0)
@@ -1823,7 +1823,7 @@
     (instances
       (project "new-fee"
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060a78f04"
-          (reference "L1001") (unit 1)
+          (reference "L10") (unit 1)
         )
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060aafcbb"
           (reference "L9") (unit 1)
