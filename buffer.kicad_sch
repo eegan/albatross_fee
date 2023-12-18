@@ -4,6 +4,15 @@
 
   (paper "A")
 
+  (title_block
+    (title "ALBATROS low frequency front end")
+    (date "2023-12-18")
+    (rev "1 as modified")
+    (company "McGill Radio Lab")
+    (comment 1 "McGill University Physics")
+    (comment 2 "Eamon Egan")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_Coaxial" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0.254 3.048 0)
