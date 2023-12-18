@@ -6,6 +6,7 @@
 *.bak
 *.bck
 *.sch-bak
+*.kicad_sch-bak
 *.kicad_pcb-bak
 *~
 _autosave-*
@@ -48,3 +49,7 @@ gerber/*
 
 # local settings
 *.kicad_prl
+
+# MS Office files
+*.xls*
+*.doc*
