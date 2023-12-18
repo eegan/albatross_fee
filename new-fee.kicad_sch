@@ -147,8 +147,8 @@
     (effects (font (size 3 3)) (justify left bottom))
     (uuid 32276ced-f1d7-453a-83e9-b2df20e72f03)
   )
-  (text "TDL for rev 3\n\nFix ESD diode footprint (SOT-563)\nAdd ESD component on power rails?\nAdd bias tee circuit\n\nEarlier ideas:\nCopper pour on top?? would affect Z esp on L2?\n"
-    (at 82.55 52.07 0)
+  (text "TDL for rev 3\n\nSee individual TDLs on each page\n\nTODO: Add ESD component on power rails? Probably rev biased diodes from rails to GND\nTODO: Add silkscreen labels for: compass points, POL outputs, jumpers\nTODO: Add a couple more ground test points?\n\nEarlier ideas:\nCopper pour on top?? would affect Z esp on L2?\n"
+    (at 73.025 63.5 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 9cb12cc8-7f1a-4a01-9256-c119f11a8a02)
   )
