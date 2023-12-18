@@ -7,7 +7,7 @@
   (title_block
     (title "ALBATROS low frequency front end")
     (date "2023-12-18")
-    (rev "1 as modified")
+    (rev "2 as modified")
     (company "McGill Radio Lab")
     (comment 1 "McGill University Physics")
     (comment 2 "Eamon Egan")
