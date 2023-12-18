@@ -1769,7 +1769,7 @@
           (reference "C1001") (unit 1)
         )
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060aafcbb"
-          (reference "C?") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -1826,7 +1826,7 @@
           (reference "L1001") (unit 1)
         )
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060aafcbb"
-          (reference "L?") (unit 1)
+          (reference "L9") (unit 1)
         )
       )
     )
@@ -1835,7 +1835,7 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 231.14 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2e990c8-dee2-4863-8e64-204eb722ee87)
-    (property "Reference" "JP?" (at 231.14 140.081 0)
+    (property "Reference" "JP36" (at 231.14 140.081 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Jumper_2_Open" (at 231.14 142.3924 0)
@@ -1852,10 +1852,10 @@
     (instances
       (project "new-fee"
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060a78f04"
-          (reference "JP?") (unit 1)
+          (reference "JP36") (unit 1)
         )
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060aafcbb"
-          (reference "JP?") (unit 1)
+          (reference "JP37") (unit 1)
         )
       )
     )

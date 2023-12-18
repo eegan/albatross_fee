@@ -1961,7 +1961,7 @@
     (effects (font (size 3 3)) (justify left bottom))
     (uuid 0767378a-a3fd-4ca1-a3b1-11e79b6f8e88)
   )
-  (text "TDL for rev3\n\nTODO: update R70 value (page 2)\n\nDONE: bypass JFET circuit with net tie\nDONE: Fix ESD diode footprint\n"
+  (text "TDL for rev3\n\nTODO: update R70 value (page 2)\nTODO: fix R39 duplicate reference (page 2, page 4)\n\nDONE: bypass JFET circuit with net tie\nDONE: Fix ESD diode footprint\n"
     (at 156.21 41.275 0)
     (effects (font (size 3 3)) (justify left bottom))
     (uuid 21f0394b-5388-4b20-bb47-4d3315961896)
@@ -4299,7 +4299,7 @@
   (symbol (lib_id "Device:R_US") (at 215.9 141.605 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006197d1f0)
-    (property "Reference" "R39" (at 217.0684 143.3322 0)
+    (property "Reference" "R55" (at 217.0684 143.3322 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "120" (at 214.757 143.3322 0)
@@ -4316,7 +4316,7 @@
     (instances
       (project "new-fee"
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060a78f04/00000000-0000-0000-0000-000060a49ad1"
-          (reference "R39") (unit 1)
+          (reference "R55") (unit 1)
         )
         (path "/378af8b4-af3d-46e7-89ae-deff12ca9067/00000000-0000-0000-0000-000060a78f04/00000000-0000-0000-0000-000060a4c5dd"
           (reference "R56") (unit 1)
