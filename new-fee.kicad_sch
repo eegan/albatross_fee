@@ -283,7 +283,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 115.57 169.545 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp no)
     (uuid 00000000-0000-0000-0000-0000619c2a8e)
     (property "Reference" "J19" (at 117.8052 170.4594 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -308,7 +308,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 123.19 169.545 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp no)
     (uuid 00000000-0000-0000-0000-0000619c2a98)
     (property "Reference" "J20" (at 125.4252 170.4594 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -383,7 +383,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 130.81 169.545 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp no)
     (uuid 00000000-0000-0000-0000-0000619c41ef)
     (property "Reference" "J21" (at 133.0452 170.4594 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -408,7 +408,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 138.43 169.545 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board no) (dnp no)
     (uuid 00000000-0000-0000-0000-0000619c41f9)
     (property "Reference" "J22" (at 140.6652 170.4594 90)
       (effects (font (size 1.27 1.27)) (justify right))
