@@ -2758,7 +2758,7 @@
     (property "VPN" "343-CONSMA020.062-G-ND" (at 22.225 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Flag" "" (at 22.225 114.3 0)
+    (property "Flag" "SMT" (at 22.225 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c0de5b61-d537-4224-a70e-094dc4ff2089))
