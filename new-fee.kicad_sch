@@ -197,6 +197,9 @@
     (property "Datasheet" "~" (at 85.725 169.545 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Flag" "THT" (at 85.725 169.545 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 016a10d0-888f-4c72-8223-c4894cd877c2))
     (instances
       (project "new-fee"
@@ -220,6 +223,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 93.345 169.545 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Flag" "THT" (at 93.345 169.545 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1d47d1af-3f9a-49d3-9315-826a1a74609a))
@@ -297,6 +303,9 @@
     (property "Datasheet" "~" (at 115.57 169.545 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Flag" "" (at 115.57 169.545 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 736c15db-2ac5-4f83-b97a-5e8241901ca6))
     (instances
       (project "new-fee"
@@ -320,6 +329,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 123.19 169.545 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Flag" "" (at 123.19 169.545 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3a417397-60db-4c26-8a4f-8635bf4c333d))
@@ -397,6 +409,9 @@
     (property "Datasheet" "~" (at 130.81 169.545 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Flag" "" (at 130.81 169.545 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 737694a1-e1da-4724-8b51-cfe0192d5d62))
     (instances
       (project "new-fee"
@@ -420,6 +435,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 138.43 169.545 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Flag" "" (at 138.43 169.545 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c71d3b00-0fab-48a6-85ad-c8c248d83b51))
